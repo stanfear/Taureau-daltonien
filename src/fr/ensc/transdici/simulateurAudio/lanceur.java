@@ -1,3 +1,4 @@
+package fr.ensc.transdici.simulateurAudio;
 
 public class lanceur {
 
@@ -17,11 +18,21 @@ public class lanceur {
 		balance.AddValue2Gain(10, -10);
 		balance.AddValue2Gain(2, -6);
 		
-		System.out.println(balance.getGain());
+		try {
+			System.out.println(balance.getGain(155));
+		} catch (OutOfRangeException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		balance.removeValueFromGain(150);
 		
-		System.out.println(balance.getGain());
+		try {
+			System.out.println(balance.getGain(155));
+		} catch (OutOfRangeException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
