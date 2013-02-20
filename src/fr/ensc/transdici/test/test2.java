@@ -1,4 +1,4 @@
-package fr.ensc.transdici.test
+package fr.ensc.transdici.test;
 
 import java.io.File;
 import java.io.IOException;
